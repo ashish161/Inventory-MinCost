@@ -29,35 +29,44 @@ alphanumeric characters.
 To minimize the total sales price it can be partly fulfilled from one country and remaining
 from other. Assume that before each purchase order the inventory is replenished to its
 normal level. Thus the orders are independent of each other.
+
 Use following input/output to understand the problem better. If there is something which
 is not clear, do not hesitate to post your questions on AgileDevBootcamp forum. Also if
 you find any discrepancies in the problem or sample input/output please let us know.
+
 INPUT FORMAT: (no space between separators)
 <purchase_country>:<optional_passport_number>:<item_type>:<number_of_
 units_to_be_ordered>:<item_type>:<number_of_units_to_be_ordered>
+
 OUTPUT FORMAT:
 <total_sale_price>:<ipod_brazil_inventory>:<ipod_argentina_inventory>
 :<iphone_brazil_inventory>:<iphone_argentina_inventory>
+
 INPUT 1:
 BRAZIL:B123AB1234567:IPHONE:20:IPOD:10
 OUTPUT 1:
 2650:90:100:80:50
+
 INPUT 2:
 ARGENTINA:B123AB1234567:IPHONE:22:IPOD:10
 OUTPUT 2:
 3910:90:100:80:48
+
 INPUT 3:
 BRAZIL:AAB123456789:IPHONE:125:IPOD:70
 OUTPUT 3:
 19260:30:100:0:25
+
 INPUT 4:
 ARGENTINA:AAB123456789:IPOD:50:IPHONE:25
 OUTPUT 4:
 8550:100:50:80:45
+
 INPUT 5:
 BRAZIL:IPHONE:50:IPOD:150
 OUTPUT 5:
 18500:0:50:50:50
+
 INPUT 6:
 BRAZIL:IPHONE:250:IPOD:150
 OUTPUT 6:
